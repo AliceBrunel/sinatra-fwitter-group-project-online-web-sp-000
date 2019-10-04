@@ -10,6 +10,6 @@ class UsersController < ApplicationController
     else
       User.create(username: params[:username], password: params[:password])
       redirect('/tweets/tweets')
-    end   
+    end
   end
 end
