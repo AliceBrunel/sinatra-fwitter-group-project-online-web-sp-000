@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end
 
   post '/tweets' do
-    if params[:username] == '' || params[:password] == '' || params[:email]
+    if params[:username] == '' || params[:password] == '' || params[:email] == ''
       redirect '/failure'
     else
       User.create(username: params[:username], password: params[:password])
