@@ -9,7 +9,7 @@ class UsersController < ApplicationController
       redirect '/failure'
     else
       User.create(username: params[:username], password: params[:password])
-      redirect('/tweets/tweets')
+      redirect('/tweets')
     end
   end
 end
