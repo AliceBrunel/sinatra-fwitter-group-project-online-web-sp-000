@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end
 
   post '/tweets' do
-    
+
 
     redirect('/tweets/tweets')
   end
